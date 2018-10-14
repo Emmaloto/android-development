@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimateActivity">
+
+
+    <RelativeLayout
+        android:layout_width="388dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/triangle_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/chickenView"
+            android:layout_width="275dp"
+            android:layout_height="372dp"
+            android:layout_centerInParent="true"
+            android:alpha="1"
+            android:onClick="animate"
+            app:srcCompat="@drawable/chicken"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="101dp" />
+
+        <ImageView
+            android:id="@+id/cowView"
+            android:layout_width="275dp"
+            android:layout_height="372dp"
+            android:layout_centerInParent="true"
+            android:alpha="0"
+            android:onClick="animate"
+            app:srcCompat="@drawable/cow"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="101dp" />
+
+        <ImageView
+            android:id="@+id/dolphinView"
+            android:layout_width="275dp"
+            android:layout_height="372dp"
+            android:layout_centerInParent="true"
+            android:alpha="0"
+            android:onClick="animate"
+            app:srcCompat="@drawable/dolphin"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="101dp" />
+
+        <ImageView
+            android:id="@+id/mouseView"
+            android:layout_width="275dp"
+            android:layout_height="372dp"
+            android:layout_centerInParent="true"
+            android:alpha="0"
+            android:onClick="animate"
+            app:srcCompat="@drawable/mouse"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="101dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="11dp"
+            android:layout_marginStart="38dp"
+            android:layout_weight="1"
+            android:onClick="toggleAudio"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:text="Music"
+            android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+            android:textColor="#322a2a"
+            android:typeface="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="21dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

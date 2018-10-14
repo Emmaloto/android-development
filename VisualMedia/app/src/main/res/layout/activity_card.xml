@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardActivity">
+    <!--xmlns:app="http://schemas.android.com/apk/res/com.example.emmalotopassy.visualmedia" -->
+
+    <RelativeLayout
+        android:layout_width="388dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/triangle_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="356dp"
+            android:layout_height="464dp"
+            android:layout_centerInParent="true"
+            app:columnCount="3"
+            app:rowCount="4">
+
+            <com.example.emmalotopassy.visualmedia.CardView
+                android:id="@+id/card_0_0"
+                android:layout_width="70dp"
+                android:layout_height="86dp"
+                android:layout_margin="10dp"
+                android:onClick="selectCard"
+                android:tag="card"
+                app:layout_column="0"
+                app:layout_row="0"
+                app:srcCompat="@drawable/cardback" />
+
+            <com.example.emmalotopassy.visualmedia.CardView
+                android:id="@+id/card_0_1"
+                android:layout_width="70dp"
+                android:layout_height="86dp"
+                android:layout_margin="10dp"
+                android:onClick="selectCard"
+                android:tag="card"
+                app:layout_column="1"
+                app:layout_row="0"
+                app:srcCompat="@drawable/cardback" />
+
+            <com.example.emmalotopassy.visualmedia.CardView
+                android:id="@+id/card_0_2"
+                android:layout_width="70dp"
+                android:layout_height="86dp"
+                android:layout_margin="10dp"
+                android:onClick="selectCard"
+                android:tag="card"
+                app:layout_column="2"
+                app:layout_row="0"
+                app:srcCompat="@drawable/cardback" />
+
+            <com.example.emmalotopassy.visualmedia.CardView
+                android:id="@+id/card_1_0"
+                android:layout_width="70dp"
+                android:layout_height="86dp"
+                android:layout_margin="10dp"
+                android:onClick="selectCard"
+                android:tag="card"
+                app:layout_column="0"
+                app:layout_row="1"
+                app:srcCompat="@drawable/cardback" />
+
+        </android.support.v7.widget.GridLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

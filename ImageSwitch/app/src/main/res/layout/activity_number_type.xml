@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumberTypeActivity">
+
+    <TextView
+        android:id="@+id/inst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="69dp"
+        android:gravity="center"
+        android:text="Enter a number to see if it's a triangular or square number. "
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/numbInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numbInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/resultText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inst" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="267dp"
+        android:layout_marginEnd="187dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginRight="187dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="27dp"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numbInput" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="11dp"
+        android:onClick="checkNumber"
+        android:text="Check Number"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/resultText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numbInput" />
+
+</android.support.constraint.ConstraintLayout>

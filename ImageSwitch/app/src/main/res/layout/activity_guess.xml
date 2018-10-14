@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuessActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="7dp"
+        android:gravity="center"
+        android:text="Try to guess the number generated! Watch out for the hints at the bottom!"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/pickView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pickView"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginRight="61dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="12dp"
+        android:text="Pick a number between 1 and 10"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="94dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginRight="94dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="12dp"
+        android:text="Enter into the box below:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickView" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="85dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginStart="84dp"
+        android:ems="10"
+        android:hint="Guess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="170dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginLeft="134dp"
+        android:layout_marginRight="134dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="26dp"
+        android:onClick="checkGuess"
+        android:text="Check Guess"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="251dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginLeft="98dp"
+        android:layout_marginRight="97dp"
+        android:layout_marginStart="98dp"
+        android:onClick="generateNumber"
+        android:text="Generate New Number"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="94dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginRight="128dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:srcCompat="@drawable/question" />
+
+    <TextView
+        android:id="@+id/hintText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="189dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginRight="189dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="34dp"
+        android:gravity="center"
+        android:text="   "
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</android.support.constraint.ConstraintLayout>

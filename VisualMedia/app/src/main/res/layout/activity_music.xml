@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="344dp"
+            android:layout_height="251dp">
+
+            <RadioButton
+                android:id="@+id/song_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/format3"
+                android:layout_weight="1"
+                android:checked="true"
+                android:gravity="center"
+                android:onClick="setSong"
+                android:tag="1"
+                android:text="Mirrorball - Purple  Planet"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/song_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/format3"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="setSong"
+                android:tag="2"
+                android:text="Love Life - Purple  Planet"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/song_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/format3"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="setSong"
+                android:tag="3"
+                android:text="Up Your Street - Purple Planet"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:id="@+id/Song1"
+            android:layout_width="match_parent"
+            android:layout_height="84dp">
+
+            <TextView
+                android:id="@+id/SongTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="35dp"
+                android:alpha="0"
+                android:text="Love Life - Purple  Planet"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/format3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="13dp"
+                android:text="MP3 file"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Song2"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_below="@+id/Song1"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="84dp">
+
+            <TextView
+                android:id="@+id/format2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="14dp"
+                android:text="MP3 file"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Song3"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_below="@+id/Song2"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="168dp">
+
+            <TextView
+                android:id="@+id/format3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:text="MP3 file"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Functions"
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="13dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="339dp">
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:scaleX="1"
+                android:scaleY="1" />
+
+            <SeekBar
+                android:id="@+id/progBar"
+                style="@android:style/Widget.SeekBar"
+                android:layout_width="337dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="71dp"
+                android:scaleX="1"
+                android:scaleY="1" />
+
+
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/progBar"
+                android:adjustViewBounds="true"
+                android:onClick="play"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/play_btn" />
+
+            <ImageButton
+                android:id="@+id/pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="100dp"
+                android:adjustViewBounds="true"
+                android:onClick="pause"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pause_btn" />
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/progBar"
+                android:layout_alignEnd="@+id/progBar"
+                android:text="00:00"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/currPos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/progBar"
+                android:layout_alignStart="@+id/progBar"
+                android:text="00:00"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/VolLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/Functions"
+                android:layout_centerHorizontal="true"
+                android:text="Volume" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
