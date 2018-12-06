@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Advanced Android</string>
+    <string name="title_activity_grab_web_content">GrabWebContentActivity</string>
+</resources>

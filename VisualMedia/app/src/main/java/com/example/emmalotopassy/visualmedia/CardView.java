@@ -27,6 +27,7 @@ public class CardView extends AppCompatImageView {
 
     private int back;
     private int front;
+    private boolean faceUp = false;
 
     public CardView(Context context) {
         super(context);
@@ -45,6 +46,7 @@ public class CardView extends AppCompatImageView {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CardView, defStyle, 0);
 
     }
+
 
     private void init(AttributeSet attrs, int defStyle) {
         // Load attributes
@@ -133,7 +135,19 @@ public class CardView extends AppCompatImageView {
         front = cardImage;
     }
 
-    public void flipCard(){}
+    public void setBack(int cardImage){
+        back = cardImage;
+    }
+
+    public void flipCard(){
+        if(faceUp) {
+            this.setImageResource(back);
+            faceUp = false;
+        }else {
+            this.setImageResource(front);
+            faceUp = true;
+        }
+    }
 
     /**
      * Gets the example string attribute value.

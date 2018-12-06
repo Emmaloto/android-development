@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loadCardGame(View view){
-        // Intent intent = new Intent(this, CardActivity.class);
-        // startActivity(intent);
+         Intent intent = new Intent(this, CardActivity.class);
+         startActivity(intent);
 
-        Toast.makeText(this, "This function is still in development. Sorry!", Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "This function is still in development. Sorry!", Toast.LENGTH_LONG).show();
     }
 
     public void loadVideoPlayer(View view){

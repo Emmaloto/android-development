@@ -29,7 +29,7 @@ public class CardActivity extends AppCompatActivity {
                 R.drawable.card_phone, R.drawable.card_roses, R.drawable.card_target, R.drawable.card_tortise, R.drawable.card_water};
         cardFaces = tempCard;
 
-        setCards();
+        //setCards();
     }
 
     public void setCards(){
@@ -59,8 +59,10 @@ public class CardActivity extends AppCompatActivity {
         int noOfCards = grid.getChildCount();
 
         for(int child = 0; child < noOfCards; child++){
-            CardView card = (CardView)grid.getChildAt(child);
-            card.setTag(playingCards[child]);
+            //CardView card = (CardView)grid.getChildAt(child);
+            //card.setFront(playingCards[child].getFace());
+
+
         }
 
         Log.i("Info", "Grid has " + noOfCards);
@@ -86,8 +88,9 @@ public class CardActivity extends AppCompatActivity {
         CardView card = (CardView)view;
 
         if(true);
-            //
             //img.setImageResource((int)img.getTag());
+
+        card.flipCard();
     }
 
     private int generateRandom(int min_n, int max_n){
