@@ -1,0 +1,9 @@
+<resources>
+    <!-- <string name="app_name">Memory Card Game</string> -->
+    <string name="app_name">Card Game </string>
+    <string name="refresh"> Refresh Game </string>
+    <string name="new_game">Select Game </string>
+    <string name="photos"> New Background </string>
+    <string name="credits"> Credits </string>
+    <string name="creditsDesc"> This game was created by Emmanuel Oluloto. All art and sounds are freely licensed.</string>
+</resources>

@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView image, image2;
+    //private ImageView image, image2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

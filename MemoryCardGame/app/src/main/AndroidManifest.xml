@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.emmalotopassy.memorycardgame">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cardgamesicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/cardgamesicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme">
+        </activity>
+
+        <activity android:name=".PopText"
+            android:theme="@style/AppTheme.CustomTheme">
+        </activity>
+
+        <activity android:name=".PopImageText"
+            android:theme="@style/AppTheme.CustomTheme">
+        </activity>
+
+    </application>
+
+    <!-- android:theme="@style/AppTheme" -->
+</manifest>

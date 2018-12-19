@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group >
+        <item
+            android:icon="@drawable/refresh"
+            android:title="@string/refresh"
+            android:id="@+id/refresh"
+            />
+
+        <item
+            android:icon="@drawable/newpage"
+            android:title="@string/new_game"
+            android:id="@+id/new_game"/>
+        <item
+            android:icon="@drawable/photostack"
+            android:title="@string/photos"
+            android:id="@+id/photos"/>
+        <item
+            android:icon="@drawable/iconlist"
+            android:title="@string/credits"
+            android:id="@+id/credits"/>
+    </group>
+</menu>
